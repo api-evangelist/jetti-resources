@@ -1,0 +1,53 @@
+generated: '2026-08-23'
+method: probed
+source: live GET probes of every Jetti Resources host reachable without credentials
+found: 0
+summary: >-
+  No /.well-known/ document is published on any Jetti Resources host. www.jettiresources.com
+  is a server-rendered Next.js site that returns a genuine HTTP 404 for unknown paths (a
+  deliberately invalid control path returned 404, not 200), so every miss below is a real
+  404 and not a single-page-app catch-all. The apex jettiresources.com 301-redirects to the
+  www host, so it has no independent well-known surface. No pointer of type WellKnown,
+  SecurityTxt or APICatalog is wired into apis.yml, because nothing was served.
+hosts:
+- host: https://www.jettiresources.com
+  note: >-
+    Next.js App Router site. Unknown paths render the framework 404 page with a real 404
+    status code; confirmed against control path /control-path-does-not-exist-9f3a2b.
+  soft_404: false
+  control_path: /control-path-does-not-exist-9f3a2b
+  control_status: 404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://jettiresources.com
+  note: >-
+    Apex host. Every probed path returned HTTP 301 to the equivalent path on
+    www.jettiresources.com; no document is served from the apex itself.
+  soft_404: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+x-evidence:
+  fetched: '2026-08-23'
+  method: HTTP GET, no credentials, browser User-Agent
+  note: >-
+    Recorded so a later run does not re-probe blindly and does not mistake the Next.js
+    404 page for a served document. robots.txt on this host reads
+    "User-Agent: * / Allow: / / Disallow: /api/" — the disallowed /api/ prefix is the
+    site's own Next.js route handlers behind the website chat assistant and the Rosetta
+    predictor widget, not a published developer API. It was not probed; we honor robots.
