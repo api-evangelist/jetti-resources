@@ -64,5 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jetti Resources is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/jetti-resources_stock/
+Jetti Resources is a Boulder, Colorado based metallurgical technology company whose catalytic leaching process unlocks copper from low-grade primary sulfide ores such as chalcopyrite — roughly 70% of the world's copper resources — that conventional pyrometallurgy cannot treat economically and that bioleaching cannot treat at all because of the passivation layer that halts extraction. Jetti's catalyst prevents that layer from forming, allowing uninterrupted heap and stockpile leaching through existing bioleach and SX-EW circuits using modular, standardized micro plants that require no additional permits. The technology has been deployed commercially since 2019, including at Capstone's Pinto Valley mine in Arizona and Freeport-McMoRan's El Abra operation in Chile, and the company is backed by BHP, Freeport-McMoRan, Mitsubishi Corporation, BMW Group, BlackRock, T. Rowe Price, Orion Resource Partners, DNS Capital and Zoma Capital. Jetti sells a chemical and process technology licence to mine operators rather than software: it runs no developer program, publishes no public API, SDK or machine-readable specification, and its only authenticated surface is an Intralinks-hosted customer portal for existing licensees.
+
+**Areas:** Company · Mining · Copper · Critical Minerals · Metals · Hydrometallurgy · Cleantech · Energy Transition · Sustainability · Industrial Technology
+
+## Jetti Resources on APIs.io
+
+Everything profiled for Jetti Resources is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jetti-resources/](https://apis.io/providers/jetti-resources/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jetti Resources Domain Security](https://apis.io/security/jetti-resources/jetti-resources-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.jettiresources.com/)
+- [Support](https://www.jettiresources.com/contact-us)
+- [Terms of service](https://www.jettiresources.com/terms-of-use)
+- [Privacy policy](https://www.jettiresources.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 9.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jetti-resources/](https://apis.io/providers/jetti-resources/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jetti Resources: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jetti-resources/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
